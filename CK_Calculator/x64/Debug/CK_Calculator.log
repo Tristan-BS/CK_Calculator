@@ -1,0 +1,7 @@
+﻿   Qt/MSBuild: 3.3.0.13
+   Qt: 6.8.0
+  CK_Calculator.cpp
+  CalculatorFunction.cpp
+C:\APC\KNAPP\WMS Cardiff\CK_Calculator\CK_Calculator\CK_Calculator.cpp(1,1): warning C4828: Die Datei enthält ein Zeichen, das bei Offset 0x5fb beginnt. Dieses Zeichen ist im aktuellen Quellzeichensatz (Codepage 65001) unzulässig.
+C:\APC\KNAPP\WMS Cardiff\CK_Calculator\CK_Calculator\CK_Calculator.cpp(1,1): warning C4828: Die Datei enthält ein Zeichen, das bei Offset 0x617 beginnt. Dieses Zeichen ist im aktuellen Quellzeichensatz (Codepage 65001) unzulässig.
+  CK_Calculator.vcxproj -> C:\APC\KNAPP\WMS Cardiff\CK_Calculator\x64\Debug\CK_Calculator.exe

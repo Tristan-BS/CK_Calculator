@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{7AF39CB4-4820-4F37-B2A2-D810D628E77D}|CK_Calculator\\CK_Calculator.vcxproj|solutionrelative:CK_Calculator\\CK_Calculator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7AF39CB4-4820-4F37-B2A2-D810D628E77D}|CK_Calculator\\CK_Calculator.vcxproj|C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\CalculatorFunction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7AF39CB4-4820-4F37-B2A2-D810D628E77D}|CK_Calculator\\CK_Calculator.vcxproj|solutionrelative:CK_Calculator\\CalculatorFunction.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AF39CB4-4820-4F37-B2A2-D810D628E77D}|CK_Calculator\\CK_Calculator.vcxproj|C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\CK_Calculator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7AF39CB4-4820-4F37-B2A2-D810D628E77D}|CK_Calculator\\CK_Calculator.vcxproj|solutionrelative:CK_Calculator\\CK_Calculator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AF39CB4-4820-4F37-B2A2-D810D628E77D}|CK_Calculator\\CK_Calculator.vcxproj|C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\CalculatorFunction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7AF39CB4-4820-4F37-B2A2-D810D628E77D}|CK_Calculator\\CK_Calculator.vcxproj|solutionrelative:CK_Calculator\\CalculatorFunction.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7AF39CB4-4820-4F37-B2A2-D810D628E77D}|CK_Calculator\\CK_Calculator.vcxproj|C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7AF39CB4-4820-4F37-B2A2-D810D628E77D}|CK_Calculator\\CK_Calculator.vcxproj|solutionrelative:CK_Calculator\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -27,14 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\main.cpp",
-              "RelativeDocumentMoniker": "CK_Calculator\\main.cpp",
-              "ToolTip": "C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\main.cpp",
-              "RelativeToolTip": "CK_Calculator\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "Title": "CalculatorFunction.cpp",
+              "DocumentMoniker": "C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\CalculatorFunction.cpp",
+              "RelativeDocumentMoniker": "CK_Calculator\\CalculatorFunction.cpp",
+              "ToolTip": "C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\CalculatorFunction.cpp",
+              "RelativeToolTip": "CK_Calculator\\CalculatorFunction.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAkwBUAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-13T11:17:53.14Z",
+              "WhenOpened": "2024-11-13T12:36:30.187Z",
               "EditorCaption": ""
             },
             {
@@ -45,9 +57,48 @@
               "RelativeDocumentMoniker": "CK_Calculator\\CK_Calculator.cpp",
               "ToolTip": "C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\CK_Calculator.cpp",
               "RelativeToolTip": "CK_Calculator\\CK_Calculator.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAUwE4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-13T11:17:28.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CalculatorFunction.h",
+              "DocumentMoniker": "C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\CalculatorFunction.h",
+              "RelativeDocumentMoniker": "CK_Calculator\\CalculatorFunction.h",
+              "ToolTip": "C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\CalculatorFunction.h",
+              "RelativeToolTip": "CK_Calculator\\CalculatorFunction.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-13T12:42:51.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CK_Calculator.h",
+              "DocumentMoniker": "C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\CK_Calculator.h",
+              "RelativeDocumentMoniker": "CK_Calculator\\CK_Calculator.h",
+              "ToolTip": "C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\CK_Calculator.h",
+              "RelativeToolTip": "CK_Calculator\\CK_Calculator.h",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAjwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-13T12:04:34.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\main.cpp",
+              "RelativeDocumentMoniker": "CK_Calculator\\main.cpp",
+              "ToolTip": "C:\\APC\\KNAPP\\WMS Cardiff\\CK_Calculator\\CK_Calculator\\main.cpp",
+              "RelativeToolTip": "CK_Calculator\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-13T11:17:53.14Z",
               "EditorCaption": ""
             }
           ]
