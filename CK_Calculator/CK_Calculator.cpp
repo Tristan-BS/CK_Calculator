@@ -1,4 +1,4 @@
-#include "CK_Calculator.h"
+ï»¿#include "CK_Calculator.h"
 #include "CalculatorFunction.h"
 
 #include <iostream>
@@ -17,7 +17,7 @@ using namespace std;
 
 #define PI 3.14159265358979323846
 
-
+// Constructor
 CK_Calculator::CK_Calculator(QWidget *parent)
     : QMainWindow(parent)
 {
@@ -25,56 +25,81 @@ CK_Calculator::CK_Calculator(QWidget *parent)
 
 	this->setWindowTitle("CK Calculator");
 
-	this->setFixedSize(300, 350);
+	this->setFixedSize(300, 400);
 
 	// Prevent input letters ( only accept 0-9, +, -, *, /, , )
 	QRegularExpressionValidator* validator = new QRegularExpressionValidator(QRegularExpression("[0-9+\\-*/,()]*"));
 	ui.LE_Input->setValidator(validator);
 }
 
+// Destructor
 CK_Calculator::~CK_Calculator() {
 }
 
+// Calculate the result - On Equals Button clicked
 void CK_Calculator::on_B_Equals_clicked() {
-	try {
-		string input = ui.LE_Input->text().toStdString();
+    try {
+        string input = ui.LE_Input->text().toStdString();
 
-		// Ersetzen Sie das Komma durch einen Punkt
-		replace(input.begin(), input.end(), ',', '.');
+        // Ersetzen Sie das Komma durch einen Punkt
+        replace(input.begin(), input.end(), ',', '.');
 
-		// Check if 2 operators are next to each other
-		for (size_t i = 0; i < input.size() - 1; i++) {
-			if (input[i] == '+' || input[i] == '-' || input[i] == '*' || input[i] == '/') {
-				if (input[i + 1] == '+' || input[i + 1] == '-' || input[i + 1] == '*' || input[i + 1] == '/') {
-					QMessageBox::warning(this, "Invalid Operation", "Two operators are next to each other.");
-					ui.LE_Input->clear();
-					return;
-				}
-			}
+        // Check if 2 operators are next to each other
+        for (size_t i = 0; i < input.size() - 1; i++) {
+            if (input[i] == '+' || input[i] == '-' || input[i] == '*' || input[i] == '/') {
+                if (input[i + 1] == '+' || input[i + 1] == '-' || input[i + 1] == '*' || input[i + 1] == '/') {
+                    QMessageBox::warning(this, "Invalid Operation", "Two operators are next to each other.");
+                    ui.LE_Input->clear();
+                    return;
+                }
+            }
+        }
+
+		if (input.empty()) {
+			QMessageBox::warning(this, "Invalid Operation", "The input is empty.");
+			return;
+		}else if (input.back() == '+' || input.back() == '-' || input.back() == '*' || input.back() == '/') {
+			QMessageBox::warning(this, "Invalid Operation", "The last character is an operator.");
+			ui.LE_Input->clear();
+			return;
 		}
 
-		double result = Calculate(input);
-		ui.LE_Input->setText(QString::number(result, 'f', 2)); // 'f' für festen Dezimalformat, 2 für zwei Dezimalstellen
-	}
-	catch (const exception& e) {
-		ui.LE_Input->clear();
-		cout << e.what() << endl;
-	}
+        double result = Calculate(input);
+        ui.LE_Input->setText(QString::number(result, 'f', 2));
+    }
+    catch (const runtime_error& e) {
+        QMessageBox::warning(this, "Fehler", e.what());
+        ui.LE_Input->clear();
+    }
+    catch (const exception& e) {
+        ui.LE_Input->setText("Error");
+        cout << e.what() << endl;
+    }
+}
+
+// Divide by 100
+void CK_Calculator::on_B_DHundred_clicked() {
+	string input = ui.LE_Input->text().toStdString();
+	double number = Calculate(input);
+	double result = number / 100;
+	ui.LE_Input->setText(QString::number(result, 'f', 2));
 }
 
 
-
-
+// Ï€
+// Clear complete input
 void CK_Calculator::on_B_ClearAll_clicked() {
 	ui.LE_Input->clear();
 }
 
+// Undo the last input
 void CK_Calculator::on_B_Undo_clicked() {
 	QString text = ui.LE_Input->text();
 	text.chop(1);
 	ui.LE_Input->setText(text);
 }
 
+// Keys pressed ( enter, Backspace, C )
 void CK_Calculator::keyPressEvent(QKeyEvent* e) {
 	int key = e->key();
 
@@ -92,7 +117,7 @@ void CK_Calculator::keyPressEvent(QKeyEvent* e) {
 	}
 }
 
-
+// Number buttons
 void CK_Calculator::on_B_Zero_clicked() {
 	ui.LE_Input->insert("0");
 }

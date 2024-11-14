@@ -44,4 +44,5 @@ private slots:
 	void on_B_Equals_clicked();
 	void on_B_ClearAll_clicked();
 	void on_B_Undo_clicked();
+	void on_B_DHundred_clicked();
 };
