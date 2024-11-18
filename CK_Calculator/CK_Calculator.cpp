@@ -6,12 +6,12 @@
 
 #include <sstream>
 #include <cmath>
-#include <math.h>
 #include <stdexcept>
 
 #include <QKeyEvent>
 #include <QMessageBox>
 #include <QRegularExpressionValidator>
+
 
 using namespace std;
 
@@ -86,7 +86,6 @@ void CK_Calculator::on_B_DHundred_clicked() {
 }
 
 
-// π
 // Clear complete input
 void CK_Calculator::on_B_ClearAll_clicked() {
 	ui.LE_Input->clear();

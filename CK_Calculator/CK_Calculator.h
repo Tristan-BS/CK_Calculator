@@ -18,14 +18,11 @@ class CK_Calculator : public QMainWindow
 public:
     CK_Calculator(QWidget *parent = nullptr);
     ~CK_Calculator();
-
-private:
-    Ui::CK_CalculatorClass ui;
-
+	Ui::CK_CalculatorClass ui;
 protected:
     void keyPressEvent(QKeyEvent* e);
 
-private slots:
+protected slots:
 	void on_B_Zero_clicked();
 	void on_B_One_clicked();
 	void on_B_Two_clicked();
@@ -41,6 +38,8 @@ private slots:
 	void on_B_Minus_clicked();
 	void on_B_Multiply_clicked();
 	void on_B_Divide_clicked();
+
+public slots:
 	void on_B_Equals_clicked();
 	void on_B_ClearAll_clicked();
 	void on_B_Undo_clicked();
